@@ -1,0 +1,63 @@
+---
+import { LanguageSelector } from "astro-i18next/components";
+---
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-div-logo">
+                <a href="#home" class="footer-logo">
+                    <img src="/assets/Logo_KP_White.png" alt="Logo KP"/>
+                </a>
+            </div>
+            <div class="footer-div-links">
+                <ul class='footer-socials'>
+                    <li class='footer-social-item'>
+                        <a href="https://www.linkedin.com/in/kilian-pichard" target="_blank" rel="noreferrer" class='home-social-links'>
+                            <!--<FaLinkedin class='footer-social-icon'/>-->
+                        </a>
+                    </li>
+                    <li class='footer-social-item'>
+                        <a href="https://github.com/Kilian-Pichard/" target="_blank" rel="noreferrer" class='home-social-links'>
+                            <!--<FaGithub class='footer-social-icon'/>-->
+                        </a>
+                    </li>
+                    <li class='footer-social-item'>
+                        <a href="mailto:contact@kilianpichard.fr" target="_blank" rel="noreferrer" class='home-social-links'>
+                            <!--<FaEnvelope class='footer-social-icon'/>-->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class='footer-middle'>
+            <ul class='footer-div-languages'>
+                <li class="flag-button"><a href="/">FR</a></li>
+                <li class="flag-button"><a href="/en">EN</a></li>
+                <li class="flag-button"><a href="/es">ES</a></li>
+                <!--
+                <li class='flag-button' onClick={changeLanguage("fr")}><FranceFlag class={`flag-icon ${(currentLanguage === 'fr') ? 'active' : ''}`} /></li>
+                <li class='flag-button' onClick={changeLanguage("en")}><GreatBritainFlag class={`flag-icon ${(currentLanguage === 'en') ? 'active' : ''}`} /></li>
+                <li class='flag-button' onClick={changeLanguage("es")}><SpainFlag class={`flag-icon ${(currentLanguage === 'es') ? 'active' : ''}`} /></li>
+                -->
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-div-legal">
+                <!--<p>© 2022 Kilian Pichard
+                    | <span class="footer-legal-links" onClick={() => togglePopup("privacy")}>
+                        {t("privacy")}
+                    </span> | <span class="footer-legal-links" onClick={() => togglePopup("legal")}>
+                        {t("legal")}
+                    </span>-->
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--{isOpen==="privacy" && <PrivacyPopup
+            handleClose={togglePopup}
+    />}
+    {isOpen==="legal" && <LegalPopup
+            handleClose={togglePopup}
+    />}-->
+</footer>

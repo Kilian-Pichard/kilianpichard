@@ -1,0 +1,72 @@
+---
+import { t } from "i18next";
+import '@styles/about.scss';
+
+const ageCalculator = () => {
+    //birthday
+    const birthday = new Date('August 16, 2000 17:22:00')
+
+    //calculate month difference from current date in time
+    const month_diff = Date.now() - birthday.getTime();
+
+    //convert the calculated difference in date format
+    const age_dt = new Date(month_diff);
+
+    //extract year from date
+    const year = age_dt.getUTCFullYear();
+
+    //now calculate the age of the user
+    const age = Math.abs(year - 1970);
+
+    //return the calculated age
+    return age
+}
+---
+
+<section id="about">
+    <div class="about-container">
+        <div class="section-title">
+            <h2>{t("about")}</h2>
+        </div>
+        <div class="about-picture">
+            <img src="/assets/about-main-image.jpeg" class="about-picture-image" alt="Myself" />
+        </div>
+        <div class="about-title">
+            <h3>Kilian Pichard | {t("current_position")}</h3>
+        </div>
+        <div class="about-main-infos">
+            <div class="about-description">
+                <p>
+                    {t("description")}
+                </p>
+            </div>
+            <div class="about-infos">
+                <ul>
+                    <li>
+                        <span class='infos-title'>{t("age")}</span>
+                        <span class='infos-text'>{ageCalculator()}{t("age_text")}</span>
+                    </li>
+                    <li>
+                        <span class='infos-title'>{t("address")}</span>
+                        <span class='infos-text'>{t("address_text")}</span>
+                    </li>
+                    <li>
+                        <span class='infos-title'>{t("email")}</span>
+                        <span class='infos-text'>{t("email_text")}</span>
+                    </li>
+                    <li>
+                        <span class='infos-title'>{t("phone")}</span>
+                        <span class='infos-text'>{t("phone_text")}</span>
+                    </li>
+                    <li>
+                        <span class='infos-title'>{t("study")}</span>
+                        <span class='infos-text'>{t("study_text")}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class='about-resume'>
+
+        </div>
+    </div>
+</section>
