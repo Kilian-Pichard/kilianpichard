@@ -1,0 +1,38 @@
+---
+import AccordionItem from '@components/AccordionItem.astro';
+const { data } = Astro.props;
+---
+
+<ul class="accordion">
+    {data.map((listSkills, index) => (
+        <AccordionItem
+            listSkills={listSkills}
+        />
+    ))}
+</ul>
+<script>
+    const accordion = document.querySelector('.accordion');
+
+    Array.from(accordion.children).forEach((accordionItem) => {
+        accordionItem.addEventListener('click', (e) => {
+            const target = e.target;
+            const parent = target.parentElement;
+            const active = parent.classList.contains('active');
+            const skillsWrapper = accordionItem.children[1]
+            Array.from(accordion.children).forEach((accordionItem) => {
+                accordionItem.classList.remove('active');
+                accordionItem.children[1].style.height = 0;
+                accordionItem.children[0].children[0].innerText = '+';
+            })
+            if (active) {
+                accordionItem.classList.remove('active');
+                skillsWrapper.style.height = 0;
+                accordionItem.children[0].children[0].innerText = '+';
+            } else {
+                accordionItem.classList.add('active');
+                skillsWrapper.style.height = `${skillsWrapper.scrollHeight}px`;
+                accordionItem.children[0].children[0].innerText = '-';
+            }
+        })
+    })
+</script>

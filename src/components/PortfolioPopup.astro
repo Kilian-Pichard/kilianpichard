@@ -1,0 +1,136 @@
+---
+import '@styles/popup.scss';
+import { t } from "i18next";
+const { id, card, title, details, category, client, activite, link, date, img } = Astro.props;
+
+let formatLink = "";
+if(link) {
+    formatLink = new URL(link).hostname;
+}
+---
+
+<div class="popup_container portfolio-popup" id={id} data-portfolio-card={card}>
+    <div class="portfolio_popup">
+        <span class="close_icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+            </svg>
+        </span>
+        <div class="popup_content">
+            <div class="popup_title">
+                <h2>{title}</h2>
+            </div>
+            <div class="popup-main-infos">
+                <div class="popup-details">
+                    <p>{details}</p>
+                </div>
+                <div class="popup-infos">
+                    <ul>
+                        <li>
+                            <span class='popup-infos-title'>{t("category")}</span>
+                            <span class='popup-infos-text'>{category}</span>
+                        </li>
+                        <li>
+                            <span class='popup-infos-title'>{t("client")}</span>
+                            <span class='popup-infos-text'>{client}</span>
+                        </li>
+                        <li>
+                            <span class='popup-infos-title'>{t("activity")}</span>
+                            <span class='popup-infos-text'>{activite}</span>
+                        </li>
+                        <li>
+                            <span class='popup-infos-title'>{t("link")}</span>
+                            <span class='popup-infos-text'><a href={link} target="_blank" rel="noreferrer">{formatLink}</a></span>
+                        </li>
+                        <li>
+                            <span class='popup-infos-title'>{t("date")}</span>
+                            <span class='popup-infos-text'>{date}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="popup-tech">
+
+            </div>
+            <div class="popup-image">
+                <img src={img} alt={title}/>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .popup-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .popup-main-infos {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+
+    .popup-image img {
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .popup-details {
+        width: 45%;
+        text-align: justify;
+        line-height: 25px;
+    }
+
+    .popup-infos {
+        width: 45%;
+        display: flex;
+        align-items: center;
+    }
+
+    .popup-infos ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popup-infos ul li {
+        margin: 5px 0;
+        display: flex;
+    }
+
+    .popup-infos-title {
+        font-weight: 600;
+        min-width: 110px;
+        display: inline-block;
+    }
+
+    .popup-infos-text {
+        color: #aaa;
+    }
+
+    .popup-infos-text a {
+        color: #aaa;
+    }
+
+    .popup-infos-text a:hover {
+        color: rgba(170,170,170,0.6);
+    }
+
+    /* MOYEN ECRAN */
+    @media screen and (max-width: 960px) {
+        .popup-main-infos {
+            flex-direction: column;
+        }
+
+        .popup-details,
+        .popup-infos {
+            width: 100%;
+        }
+
+        .popup-details {
+            margin-bottom: 20px;
+        }
+    }
+</style>

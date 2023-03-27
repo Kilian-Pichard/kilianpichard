@@ -1,0 +1,21 @@
+---
+
+const { listSkills } = Astro.props
+const { title, skills } = listSkills;
+---
+
+<li class="accordion_item">
+    <button class="button_accordion">
+        {title}
+        <span class="control">+</span>
+    </button>
+    <div
+        class="skills_wrapper"
+    >
+        <ul class="list_skills">
+            {skills.map((skill) => (
+                <li>{skill}</li>
+            ))}
+        </ul>
+    </div>
+</li>

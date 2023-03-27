@@ -1,0 +1,92 @@
+---
+import Tabs from '@components/Tabs.astro';
+import PortfolioCard from '@components/PortfolioCard.astro';
+import { t } from "i18next";
+import '@styles/portfolio.scss';
+import AirphoningImg from '@assets/airphoning_project.jpg'
+import ZicAllImg from '@assets/zicall_project.png'
+import LesPepitesDeFranceImg from '@assets/lespepitesdefrance_project.png'
+import PionerasinformaticasImg from '@assets/pionerasinformaticas_project.png'
+---
+
+<section id="portfolio">
+    <div class="portfolio-container">
+        <div class="section-title">
+            <h2>Portfolio</h2>
+        </div>
+        <div class='portfolio-cards'>
+            <Tabs tabName="project">
+                <Fragment slot="tab-1">{t("portfolio_category_all")}</Fragment>
+                <Fragment slot="tab-2">{t("portfolio_category_website")}</Fragment>
+                <Fragment slot="tab-3">{t("portfolio_category_mobile_app")}</Fragment>
+
+                <Fragment slot="panel-1">
+                    <ul class='project-list'>
+                        <li class='list-card'>
+                            <PortfolioCard
+                                id="portfolio-card-1"
+                                img={PionerasinformaticasImg}
+                                title={t("portfolio_pionerasinformaticas_title")}
+                                category={t("portfolio_category_website")}
+                                brief={t("portfolio_pionerasinformaticas_brief")}
+                                client={t("portfolio_pionerasinformaticas_customer")}
+                                activite={t("portfolio_pionerasinformaticas_activity")}
+                                link="https://pionerasinformaticas.ujaen.es/es/"
+                                date={t("portfolio_pionerasinformaticas_date")}
+                            />
+                        </li>
+                        <li class='list-card'>
+                            <PortfolioCard
+                                id="portfolio-card-2"
+                                img={LesPepitesDeFranceImg}
+                                title={t("portfolio_lespepitesdefrance_title")}
+                                category={t("portfolio_category_website")}
+                                brief={t("portfolio_lespepitesdefrance_brief")}
+                                client={t("portfolio_lespepitesdefrance_customer")}
+                                activite={t("portfolio_lespepitesdefrance_activity")}
+                                link="https://lespepitesdefrance.com/"
+                                date={t("portfolio_lespepitesdefrance_date")}
+                            />
+                        </li>
+                        <li class='list-card'>
+                            <PortfolioCard
+                                id="portfolio-card-3"
+                                img={AirphoningImg}
+                                title={t("portfolio_airphoning_title")}
+                                category={t("portfolio_category_website")}
+                                brief={t("portfolio_airphoning_brief")}
+                                client={t("portfolio_airphoning_customer")}
+                                activite={t("portfolio_airphoning_activity")}
+                                link="https://airphoning.com"
+                                date={t("portfolio_airphoning_date")}
+                            />
+                        </li>
+                        <li class='list-card'>
+                            <PortfolioCard
+                                id="portfolio-card-4"
+                                img={ZicAllImg}
+                                title={t("portfolio_zicall_title")}
+                                category={t("portfolio_category_mobile_app")}
+                                brief={t("portfolio_zicall_brief")}
+                                client={t("portfolio_zicall_customer")}
+                                activite={t("portfolio_zicall_activity")}
+                                link="https://github.com/Kilian-Pichard/ZicAll"
+                                date={t("portfolio_zicall_date")}
+                            />
+                        </li>
+                    </ul>
+                </Fragment>
+
+            </Tabs>
+        </div>
+    </div>
+    <div class="white_svg">
+        <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
+            <polygon points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 ">
+            </polygon>
+        </svg>
+    </div>
+</section>
+<script>
+    import '../../scripts/portfolio.js'
+</script>

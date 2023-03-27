@@ -3,6 +3,7 @@ import Navbar from "@components/Navbar.astro";
 import Footer from "@components/Footer.astro";
 import Home from "@components/sections/Home.astro";
 import About from "@components/sections/About.astro";
+import Portfolio from "@components/sections/Portfolio.astro";
 import i18next, { t, changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
 
@@ -15,6 +16,7 @@ changeLanguage("fr");
 		<div class="content bg-neutral-100 dark:bg-neutral-900">
 			<Home />
 			<About />
+			<Portfolio />
 			<!--
 
 			<Portfolio />

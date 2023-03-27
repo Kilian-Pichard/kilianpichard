@@ -1,26 +1,60 @@
 ---
+import Tabs from '@components/Tabs.astro';
+import Accordion from '@components/Accordion.astro';
 import { t } from "i18next";
 import '@styles/about.scss';
+import logoContinental from "../../assets/logo_continental.png";
+import logoUJA from "../../assets/logo_uja.png";
+import logoCY from "../../assets/logo_cy_tech.png";
+import logoSigma from "../../assets/logo_sigma_consulting.png";
+import logoLWF from "../../assets/logo_la_web_factory.png";
+import logoIUT from "../../assets/logo_iut_bayonne.png";
+import logoVieljeux from "../../assets/logo_vieljeux.png";
+import AboutItem from "../AboutItem.astro";
 
 const ageCalculator = () => {
     //birthday
     const birthday = new Date('August 16, 2000 17:22:00')
-
     //calculate month difference from current date in time
     const month_diff = Date.now() - birthday.getTime();
-
     //convert the calculated difference in date format
     const age_dt = new Date(month_diff);
-
     //extract year from date
     const year = age_dt.getUTCFullYear();
-
     //now calculate the age of the user
     const age = Math.abs(year - 1970);
-
     //return the calculated age
     return age
-}
+};
+
+const data = [
+    {
+        title: t("development_skill"),
+        skills: [
+            t("development_skill_item1"),
+            t("development_skill_item2"),
+            t("development_skill_item3"),
+            t("development_skill_item4"),
+            t("development_skill_item5"),
+        ]
+    },
+    {
+        title: t("network_skill"),
+        skills: [
+            t("network_skill_item1"),
+            t("network_skill_item2"),
+            t("network_skill_item3"),
+        ]
+    },
+    {
+        title: t("security_skill"),
+        skills: [
+            t("security_skill_item1"),
+            t("security_skill_item2"),
+            t("security_skill_item3"),
+        ]
+    },
+];
 ---
 
 <section id="about">
@@ -65,8 +99,208 @@ const ageCalculator = () => {
                 </ul>
             </div>
         </div>
-        <div class='about-resume'>
 
+        <div class="about-resume">
+            <Tabs tabName="resume">
+
+                <Fragment slot="tab-1">{t("experience")}</Fragment>
+                <Fragment slot="tab-2">{t("education")}</Fragment>
+                <Fragment slot="tab-3">{t("skills")}</Fragment>
+
+                <Fragment slot="panel-1">
+                    <ul class='resume-list'>
+                        <li class='list-item'>
+                            <AboutItem
+                                place={t("experience_cdsf_apprenticeship_place")}
+                                dateStart={t("experience_cdsf_apprenticeship_date_start")}
+                                dateEnd={t("experience_cdsf_apprenticeship_date_end")}
+                                title={t("experience_cdsf_apprenticeship_title")}
+                                description={`
+                                    <ul>
+                                        <li>${t("experience_cdsf_apprenticeship_description1")}</li>
+                                        <li>${t("experience_cdsf_apprenticeship_description2")}</li>
+                                        <li>${t("experience_cdsf_apprenticeship_description3")}</li>
+                                    </ul>
+                                `}
+                                logo={logoContinental}
+                                href="https://www.continental.com/fr-fr/"
+                            />
+                        </li>
+                        <li class='list-item'>
+                            <AboutItem
+                                place={t("experience_uja_internship_place")}
+                                dateStart={t("experience_uja_internship_date_start")}
+                                dateEnd={t("experience_uja_internship_date_end")}
+                                title={t("experience_uja_internship_title")}
+                                description={`
+                                    <ul>
+                                        <li>${t("experience_uja_internship_description1")}</li>
+                                        <li>${t("experience_uja_internship_description2")}</li>
+                                        <li>${t("experience_uja_internship_description3")}</li>
+                                        <li>${t("experience_uja_internship_description4")}</li>
+                                        <li>${t("experience_uja_internship_description5")}</li>
+                                    </ul>
+                                `}
+                                logo={logoUJA}
+                                href="https://www.ujaen.es/"
+                            />
+                        </li>
+                        <li class='list-item'>
+                            <AboutItem
+                                place={t("experience_cy_project1_place")}
+                                dateStart={t("experience_cy_project1_date_start")}
+                                dateEnd={t("experience_cy_project1_date_end")}
+                                title={t("experience_cy_project1_title")}
+                                description={`
+                                    <ul>
+                                        <li>${t("experience_cy_project1_description1")}</li>
+                                        <li>${t("experience_cy_project1_description2")}</li>
+                                        <li>${t("experience_cy_project1_description3")}</li>
+                                    </ul>
+                                `}
+                                logo={logoCY}
+                                href="https://cytech.cyu.fr/"
+                            />
+                        </li>
+                        <li class='list-item'>
+                            <AboutItem
+                                place={t("experience_sigma_internship_place")}
+                                dateStart={t("experience_sigma_internship_date_start")}
+                                dateEnd={t("experience_sigma_internship_date_end")}
+                                title={t("experience_sigma_internship_title")}
+                                description={`
+                                    <ul>    
+                                        <li>${t("experience_sigma_internship_description1")} (<a href='https://airphoning.com'>Airphoning</a>).</li>
+                                        <li>${t("experience_sigma_internship_description2")}</li>
+                                        <li>${t("experience_sigma_internship_description3")}</li>
+                                        <li>${t("experience_sigma_internship_description4")}</li>
+                                    </ul>
+                                `}
+                                logo={logoSigma}
+                                href="https://sigmaconsulting.fr/"
+                            />
+                        </li>
+                        <li class='list-item'>
+                            <AboutItem
+                                place={t("experience_lwf_internship_place")}
+                                dateStart={t("experience_lwf_internship_date_start")}
+                                dateEnd={t("experience_lwf_internship_date_end")}
+                                title={t("experience_lwf_internship_title")}
+                                description={`
+                                    <ul>
+                                        <li>${t("experience_lwf_internship_description1")}</li>
+                                        <li>${t("experience_lwf_internship_description2")}</li>
+                                        <li>${t("experience_lwf_internship_description3")}</li>
+                                        <li>${t("experience_lwf_internship_description4")}</li>
+                                    </ul>
+                                `}
+                                logo={logoLWF}
+                                href="https://lawebfactory.com/"
+                            />
+                        </li>
+                        <li class='list-item'>
+                            <AboutItem
+                                place={t("experience_dut_project1_place")}
+                                dateStart={t("experience_dut_project1_date_start")}
+                                dateEnd={t("experience_dut_project1_date_end")}
+                                title={t("experience_dut_project1_title")}
+                                description={`
+                                    <ul>
+                                        <li>${t("experience_dut_project1_description1")}</li>
+                                        <li>${t("experience_dut_project1_description2")}</li>
+                                        <li>${t("experience_dut_project1_description3")}</li>
+                                    </ul>
+                                `}
+                                logo={logoIUT}
+                                href="https://www.iutbayonne.univ-pau.fr/"
+                            />
+                        </li>
+                    </ul>
+                </Fragment>
+
+                <Fragment slot="panel-2">
+                    <ul class='resume-list'>
+                        <li class='list-item'>
+                            <AboutItem
+                                place={t("education_cy_place")}
+                                dateStart={t("education_cy_date_start")}
+                                dateEnd={t("education_cy_date_end")}
+                                title={t("education_cy_title")}
+                                description={`
+                                    <ul class='description-education'>
+                                        <li>${t("education_cy_description_1")}</li>
+                                        <li>${t("education_cy_description_2")}</li>
+                                        <li>${t("education_cy_description_3")}</li>
+                                        <li>${t("education_cy_description_4")}</li>
+                                        <li>${t("education_cy_description_5")}</li>
+                                        <li>${t("education_cy_description_6")}</li>
+                                        <li>${t("education_cy_description_7")}</li>
+                                        <li>${t("education_cy_description_8")}</li>
+                                        <li>${t("education_cy_description_9")}</li>
+                                    </ul>
+                                `}
+                                logo={logoCY}
+                                href="https://cytech.cyu.fr/"
+                            />
+                        </li>
+                        <li class='list-item'>
+                            <AboutItem
+                                place={t("education_dut_place")}
+                                dateStart={t("education_dut_date_start")}
+                                dateEnd={t("education_dut_date_end")}
+                                title={t("education_dut_title")}
+                                description={`
+                                    <ul class='description-education'>
+                                        <li>${t("education_dut_description_1")}</li>
+                                        <li>${t("education_dut_description_2")}</li>
+                                        <li>${t("education_dut_description_3")}</li>
+                                        <li>${t("education_dut_description_4")}</li>
+                                        <li>${t("education_dut_description_5")}</li>
+                                        <li>${t("education_dut_description_6")}</li>
+                                        <li>${t("education_dut_description_7")}</li>
+                                        <li>${t("education_dut_description_8")}</li>
+                                        <li>${t("education_dut_description_9")}</li>
+                                    </ul>
+                                `}
+                                logo={logoIUT}
+                                href="https://www.iutbayonne.univ-pau.fr/"
+                            />
+                        </li>
+                        <li class='list-item'>
+                            <AboutItem
+                                place={t("education_vieljeux_place")}
+                                dateStart={t("education_vieljeux_date_start")}
+                                dateEnd={t("education_vieljeux_date_end")}
+                                title={t("education_vieljeux_title")}
+                                description={`
+                                    <ul class='description-education'>
+                                        <li>${t("education_vieljeux_description_1")}</li>
+                                        <li>${t("education_vieljeux_description_2")}</li>
+                                        <li>${t("education_vieljeux_description_3")}</li>
+                                        <li>${t("education_vieljeux_description_4")}</li>
+                                        <li>${t("education_vieljeux_description_5")}</li>
+                                    </ul>
+                                `}
+                                logo={logoVieljeux}
+                                href="https://lycee-vieljeux.fr/"
+                            />
+                        </li>
+                    </ul>
+                </Fragment>
+
+                <Fragment slot="panel-3">
+                    <Accordion data={data} />
+                </Fragment>
+            </Tabs>
         </div>
     </div>
+    <div class="white_svg">
+        <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
+            <polygon points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 ">
+            </polygon>
+        </svg>
+    </div>
 </section>
+<script>
+    import '../../scripts/about.js'
+</script>

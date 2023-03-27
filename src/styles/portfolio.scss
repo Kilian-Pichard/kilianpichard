@@ -1,0 +1,80 @@
+.project-categories ul.tabs__tab-list {
+  list-style: none;
+  display: flex;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-categories .tabs__tab {
+  margin: 0 20px;
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.project-categories .tabs__tab.tabs__tab--selected {
+  border-bottom: 2px solid aliceblue;
+  pointer-events: none;
+}
+
+.project-list .list-card {
+  animation: card_animation 0.6s ease;
+  -moz-animation: card_animation 0.6s ease;
+  -webkit-animation: card_animation 0.6s ease;
+}
+@keyframes card_animation {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 100px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+/*@keyframes zoom_reverse {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}*/
+
+.portfolio-cards {
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+}
+
+ul.project-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+ul.project-list li.list-card {
+  flex-basis: 45%;
+  margin: 15px 0;
+}
+
+/* PETIT ECRAN */
+@media screen and (max-width: 760px) {
+  ul.project-list li.list-card {
+    flex-basis: 44%;
+  }
+}
+
+/* TRES PETIT ECRAN */
+@media screen and (max-width: 560px) {
+  ul.project-list li.list-card {
+    flex-basis: 100%;
+  }
+}

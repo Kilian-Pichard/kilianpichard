@@ -57,7 +57,12 @@
   margin-bottom: 30px;
 }
 
-.about-resume .react-tabs__tab-panel.react-tabs__tab-panel--selected {
+.about-resume .tabs__tab-panel {
+  display: none;
+}
+
+.about-resume .tabs__tab-panel.tabs__tab-panel--selected {
+  display: block;
   animation: tab_animation 1s ease;
   -moz-animation: tab_animation 1s ease;
   -webkit-animation: tab_animation 1s ease;
@@ -73,7 +78,7 @@
   }
 }
 
-.resume-categories ul.react-tabs__tab-list {
+.resume-categories ul.tabs__tab-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -83,7 +88,7 @@
   justify-content: space-between;
 }
 
-.resume-categories li.react-tabs__tab {
+.resume-categories li.tabs__tab {
   font-size: 18px;
   cursor: pointer;
   padding: 15px 25px;
@@ -92,7 +97,7 @@
   transition: all .45s cubic-bezier(0,0,.2,1);
 }
 
-.resume-categories li.react-tabs__tab.react-tabs__tab--selected {
+.resume-categories li.tabs__tab.tabs__tab--selected {
   background-color: #fff;
   pointer-events: none;
   color: #000;
@@ -154,10 +159,6 @@ ul.resume-list li.list-item {
   transition: height ease 0.5s;
 }
 
-.skills_wrapper.open {
-  height: auto;
-}
-
 /* MOYEN ECRAN */
 @media screen and (max-width: 1024px) {
   li.list-item .description-education li,
@@ -184,7 +185,7 @@ ul.resume-list li.list-item {
 
 /* TRES PETIT ECRAN */
 @media screen and (max-width: 640px) {
-  .resume-categories ul.react-tabs__tab-list {
+  .resume-categories ul.tabs__tab-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -193,7 +194,7 @@ ul.resume-list li.list-item {
     justify-content: space-around;
   }
 
-  .resume-categories li.react-tabs__tab {
+  .resume-categories li.tabs__tab {
     margin-bottom: 10px;
   }
 }

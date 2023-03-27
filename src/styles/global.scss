@@ -12,6 +12,10 @@ html {
   /*scroll-padding-top: 120px;*/
 }
 
+body.fullpage-active {
+  overflow: hidden;
+}
+
 .nav_menu_active {
    background: rgba(36, 34, 34, 0.96);
    top: 100px;

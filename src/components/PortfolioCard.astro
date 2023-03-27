@@ -1,0 +1,128 @@
+---
+import PortfolioPopup from '@components/PortfolioPopup.astro';
+const { id, title, img, category, brief, client, activite, date, link } = Astro.props;
+const popupId = `portfolio-popup-${id.split("-").at(-1)}`;
+---
+
+<div class='card'>
+    <div class='card-top' >
+        <div class='card-link portfolio-card' id={id} data-portfolio-popup={popupId}>
+            <img src={img} alt={`Illustration du projet ${title}`}/>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="eye-hover-icon" viewBox="0 0 16 16">
+            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+        </svg>
+    </div>
+    <div class='card-bottom'>
+        <span class='card-title'>{title}</span>
+        <span class='card-category'>{category}</span>
+    </div>
+</div>
+<PortfolioPopup
+    id={popupId}
+    card={id}
+    title={title}
+    category={category}
+    details={brief}
+    client={client}
+    activite={activite}
+    date={date}
+    img = {img}
+    link={link}
+/>
+
+<script>
+
+</script>
+
+<style>
+    .card {
+        max-width: 450px;
+        margin: auto;
+    }
+
+    .card-top {
+        line-height: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .card-link {
+        display: inline-block;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .card-link:hover {
+        filter: brightness(0.6);
+        transition: 0.3s;
+    }
+
+    .card-link img {
+        width: 100%;
+        object-fit: cover;
+        height: 250px;
+        transition: transform ease 0.3s;
+    }
+
+    .card-link img:hover {
+        transform: scale(1.1, 1.1);
+        opacity: 1;
+    }
+
+    .card-bottom {
+        background-color: rgba(255,255,255,0.1);
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    .card-category {
+        font-size: 15px;
+        color: #aaa;
+    }
+
+    .card-top:hover .eye-hover-icon {
+        opacity: 1;
+        transition-duration: 0.8s;
+    }
+
+    .eye-hover-icon {
+        color: #000;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        pointer-events: none;
+        font-size: 30px;
+        opacity: 0;
+        height: 1.75rem;
+        width: 1.75rem;
+    }
+
+    /* PETIT ECRAN */
+    @media screen and (max-width: 760px) {
+        .card-link img {
+            height: 200px;
+        }
+    }
+
+    /* TRES PETIT ECRAN */
+    @media screen and (max-width: 560px) {
+        .card-link img {
+            height: 225px;
+        }
+    }
+</style>
