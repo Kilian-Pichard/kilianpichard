@@ -169,8 +169,7 @@
   "mail_subject": "Confirmation de soumission du formulaire de contact",
   "form_name": "Votre nom",
   "form_email": "Votre adresse mail",
-  "form_phone": "Numéro de téléphone",
-  "form_company": "Entreprise",
+  "form_subject": "Sujet du message",
   "form_message": "Votre message",
   "form_submit": "Envoyer",
   "form_confirmation": "Votre message a bien été envoyé.",
@@ -207,6 +206,7 @@
 
   "404_error": "Erreur 404",
   "page_not_found": "Page non trouvée",
-  "page_not_found_text": "La page que vous recherchez n'existe pas, veuillez retourner sur le site en cliquant ici : "
+  "page_not_found_text": "Oops ! La page que vous cherchez n'existe pas ou plus.",
+  "page_not_found_button": "Retour au site"
 
 }

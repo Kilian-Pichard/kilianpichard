@@ -1,0 +1,30 @@
+---
+import Navbar from "@components/Navbar.astro";
+import Footer from "@components/Footer.astro";
+import Home from "@components/sections/Home.astro";
+import About from "@components/sections/About.astro";
+import Contact from "@components/sections/Contact.astro";
+import Portfolio from "@components/sections/Portfolio.astro";
+import i18next, { t, changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+
+changeLanguage("en");
+---
+
+<Layout>
+	<div class="main-container">
+		<Navbar />
+		<div class="content bg-neutral-100 dark:bg-neutral-900">
+			<Home />
+			<About />
+			<Portfolio />
+			<Contact />
+			<Footer />
+		</div>
+		<button id="clicktotop" class="invisible opacity-0">
+			<svg class="bg-neutral-50 rounded-full fill-primary-400 hover:scale-110 duration-200 cursor-pointer h-full w-full" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+				<path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+			</svg>
+		</button>
+	</div>
+</Layout>
