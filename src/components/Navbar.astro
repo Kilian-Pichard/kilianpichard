@@ -19,6 +19,10 @@ const navLinks = [
         name: "contact",
         href: "#contact",
     },
+    {
+        name: "blog",
+        href: "https://thetechadventurer.com/",
+    },
 ];
 ---
 
@@ -34,7 +38,7 @@ const navLinks = [
         <ul class="justify-end hidden lg:flex lg:flex-row xl:flex-col xl:justify-center xl:space-y-8">
             {navLinks
                 .map((navLink) => (
-                    <li class="w-44 text-right text-xl xl:text-center">
+                    <li class="ml-16 text-xl xl:text-center">
                         <a href={navLink.href} class="text-neutral-50 hover:text-neutral-300">{t(navLink.name)}</a>
                     </li>
                 ))
