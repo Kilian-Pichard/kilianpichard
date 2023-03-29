@@ -65,6 +65,14 @@ ul.project-list li.list-card {
   margin: 15px 0;
 }
 
+.portfolio-cards .tabs__tab-panel {
+  display: none;
+}
+
+.portfolio-cards .tabs__tab-panel.tabs__tab-panel--selected {
+  display: block;
+}
+
 /* PETIT ECRAN */
 @media screen and (max-width: 760px) {
   ul.project-list li.list-card {

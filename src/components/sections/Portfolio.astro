@@ -7,6 +7,76 @@ import AirphoningImg from '@assets/airphoning_project.jpg'
 import ZicAllImg from '@assets/zicall_project.png'
 import LesPepitesDeFranceImg from '@assets/lespepitesdefrance_project.png'
 import PionerasinformaticasImg from '@assets/pionerasinformaticas_project.png'
+
+const categories = [
+    {
+        id: "1",
+        name: "all",
+        value: t("portfolio_category_all")
+    },
+    {
+        id: "2",
+        name: "website",
+        value: t("portfolio_category_website")
+    },
+    {
+        id: "3",
+        name: "mobile_app",
+        value: t("portfolio_category_mobile_app")
+    }
+]
+
+const cards = [
+    {
+        id: "portfolio-card-1",
+        category: "website",
+        img: PionerasinformaticasImg,
+        title: t("portfolio_pionerasinformaticas_title"),
+        category_text: t("portfolio_category_website"),
+        brief: t("portfolio_pionerasinformaticas_brief"),
+        client: t("portfolio_pionerasinformaticas_customer"),
+        activite: t("portfolio_pionerasinformaticas_activity"),
+        link: "https://pionerasinformaticas.ujaen.es/es/",
+        date: t("portfolio_pionerasinformaticas_date")
+    },
+    {
+        id: "portfolio-card-2",
+        category: "website",
+        img: LesPepitesDeFranceImg,
+        title: t("portfolio_lespepitesdefrance_title"),
+        category_text: t("portfolio_category_website"),
+        brief: t("portfolio_lespepitesdefrance_brief"),
+        client: t("portfolio_lespepitesdefrance_customer"),
+        activite: t("portfolio_lespepitesdefrance_activity"),
+        link: "https://lespepitesdefrance.com/",
+        date: t("portfolio_lespepitesdefrance_date")
+    },
+    {
+        id: "portfolio-card-3",
+        category: "website",
+        img: AirphoningImg,
+        title: t("portfolio_airphoning_title"),
+        category_text: t("portfolio_category_website"),
+        brief: t("portfolio_airphoning_brief"),
+        client: t("portfolio_airphoning_customer"),
+        activite: t("portfolio_airphoning_activity"),
+        link: "https://airphoning.com",
+        date: t("portfolio_airphoning_date")
+    },
+    {
+        id: "portfolio-card-4",
+        category: "mobile_app",
+        img: ZicAllImg,
+        title: t("portfolio_zicall_title"),
+        category_text: t("portfolio_category_mobile_app"),
+        brief: t("portfolio_zicall_brief"),
+        client: t("portfolio_zicall_customer"),
+        activite: t("portfolio_zicall_activity"),
+        link: "https://github.com/Kilian-Pichard/ZicAll",
+        date: t("portfolio_zicall_date"),
+    }
+]
+
 ---
 
 <section id="portfolio">
@@ -16,67 +86,75 @@ import PionerasinformaticasImg from '@assets/pionerasinformaticas_project.png'
         </div>
         <div class='portfolio-cards'>
             <Tabs tabName="project">
+
                 <Fragment slot="tab-1">{t("portfolio_category_all")}</Fragment>
                 <Fragment slot="tab-2">{t("portfolio_category_website")}</Fragment>
                 <Fragment slot="tab-3">{t("portfolio_category_mobile_app")}</Fragment>
 
+
                 <Fragment slot="panel-1">
                     <ul class='project-list'>
-                        <li class='list-card'>
-                            <PortfolioCard
-                                id="portfolio-card-1"
-                                img={PionerasinformaticasImg}
-                                title={t("portfolio_pionerasinformaticas_title")}
-                                category={t("portfolio_category_website")}
-                                brief={t("portfolio_pionerasinformaticas_brief")}
-                                client={t("portfolio_pionerasinformaticas_customer")}
-                                activite={t("portfolio_pionerasinformaticas_activity")}
-                                link="https://pionerasinformaticas.ujaen.es/es/"
-                                date={t("portfolio_pionerasinformaticas_date")}
-                            />
-                        </li>
-                        <li class='list-card'>
-                            <PortfolioCard
-                                id="portfolio-card-2"
-                                img={LesPepitesDeFranceImg}
-                                title={t("portfolio_lespepitesdefrance_title")}
-                                category={t("portfolio_category_website")}
-                                brief={t("portfolio_lespepitesdefrance_brief")}
-                                client={t("portfolio_lespepitesdefrance_customer")}
-                                activite={t("portfolio_lespepitesdefrance_activity")}
-                                link="https://lespepitesdefrance.com/"
-                                date={t("portfolio_lespepitesdefrance_date")}
-                            />
-                        </li>
-                        <li class='list-card'>
-                            <PortfolioCard
-                                id="portfolio-card-3"
-                                img={AirphoningImg}
-                                title={t("portfolio_airphoning_title")}
-                                category={t("portfolio_category_website")}
-                                brief={t("portfolio_airphoning_brief")}
-                                client={t("portfolio_airphoning_customer")}
-                                activite={t("portfolio_airphoning_activity")}
-                                link="https://airphoning.com"
-                                date={t("portfolio_airphoning_date")}
-                            />
-                        </li>
-                        <li class='list-card'>
-                            <PortfolioCard
-                                id="portfolio-card-4"
-                                img={ZicAllImg}
-                                title={t("portfolio_zicall_title")}
-                                category={t("portfolio_category_mobile_app")}
-                                brief={t("portfolio_zicall_brief")}
-                                client={t("portfolio_zicall_customer")}
-                                activite={t("portfolio_zicall_activity")}
-                                link="https://github.com/Kilian-Pichard/ZicAll"
-                                date={t("portfolio_zicall_date")}
-                            />
-                        </li>
+                        {cards.map((card) => (
+                            <li class='list-card'>
+                                <PortfolioCard
+                                    id={card.id}
+                                    img={card.img}
+                                    title={card.title}
+                                    category={card.category_text}
+                                    brief={card.brief}
+                                    client={card.client}
+                                    activite={card.activite}
+                                    link={card.link}
+                                    date={card.date}
+                                />
+                            </li>
+                        ))}
                     </ul>
                 </Fragment>
 
+                <Fragment slot="panel-2">
+                    <ul class='project-list'>
+                        {cards
+                            .filter((card) => card.category === "website")
+                            .map((card) => (
+                                <li class='list-card'>
+                                    <PortfolioCard
+                                            id={card.id}
+                                            img={card.img}
+                                            title={card.title}
+                                            category={card.category_text}
+                                            brief={card.brief}
+                                            client={card.client}
+                                            activite={card.activite}
+                                            link={card.link}
+                                            date={card.date}
+                                    />
+                                </li>
+                        ))}
+                    </ul>
+                </Fragment>
+
+                <Fragment slot="panel-3">
+                    <ul class='project-list'>
+                        {cards
+                            .filter((card) => card.category === "mobile_app")
+                            .map((card) => (
+                                <li class='list-card'>
+                                    <PortfolioCard
+                                            id={card.id}
+                                            img={card.img}
+                                            title={card.title}
+                                            category={card.category_text}
+                                            brief={card.brief}
+                                            client={card.client}
+                                            activite={card.activite}
+                                            link={card.link}
+                                            date={card.date}
+                                    />
+                                </li>
+                        ))}
+                    </ul>
+                </Fragment>
             </Tabs>
         </div>
     </div>

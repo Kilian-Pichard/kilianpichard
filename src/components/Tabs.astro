@@ -24,13 +24,7 @@ let inlineStyles = '';
             panels.push(name);
         }
     })
-    inlineStyles += classes.join(',\n');
 }
-inlineStyles +=
-    ` {` +
-    `\n  visibility: visible;\n` +
-    `  display: inline-block;\n` +
-    `}`;
 ---
 
 <!--<div class:list={[styles.tabs, 'tabs', props['class:list'], props.class]} >-->
