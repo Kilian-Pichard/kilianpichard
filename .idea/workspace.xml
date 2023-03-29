@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Avancement refabrication portfolio avec Astro (section Portfolio OK + debut section contact )">
+    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Ajout des images">
+      <change afterPath="$PROJECT_DIR$/src/layouts/ErrorLayout.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/404.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/all.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tabs.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tabs.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +32,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/kilian/Sites/kilianpichard",
+    "last_opened_file_path": "/Users/kilian/Sites/kilianpichard/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -44,11 +46,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/functions/api" />
       <recent name="$PROJECT_DIR$/functions" />
       <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/public/locales/fr" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
@@ -70,7 +72,7 @@
       <workItem from="1679665825238" duration="34931000" />
       <workItem from="1679926791116" duration="34000" />
       <workItem from="1679926829432" duration="10772000" />
-      <workItem from="1679995297860" duration="11496000" />
+      <workItem from="1679995297860" duration="12784000" />
     </task>
     <task id="LOCAL-00001" summary="Avancement refabrication portfolio avec Astro (index + section Home OK)">
       <created>1679836371769</created>
@@ -93,7 +95,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680078453681</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Resolution bug">
+      <created>1680078930382</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680078930382</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Ajout des images">
+      <created>1680079084590</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680079084590</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +119,8 @@
     <MESSAGE value="Avancement refabrication portfolio avec Astro (index + section Home OK)" />
     <MESSAGE value="Avancement refabrication portfolio avec Astro (section About OK + debut section Portfolio)" />
     <MESSAGE value="Avancement refabrication portfolio avec Astro (section Portfolio OK + debut section contact )" />
-    <option name="LAST_COMMIT_MESSAGE" value="Avancement refabrication portfolio avec Astro (section Portfolio OK + debut section contact )" />
+    <MESSAGE value="Resolution bug" />
+    <MESSAGE value="Ajout des images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout des images" />
   </component>
 </project>

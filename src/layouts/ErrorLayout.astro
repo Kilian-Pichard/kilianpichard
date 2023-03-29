@@ -1,0 +1,56 @@
+---
+import Seo from '@components/seo/Seo.astro';
+import '@styles/global.scss';
+
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="generator" content={Astro.generator} />
+
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <Seo
+                title="Kilian Pichard"
+                description="Kilian Pichard | Étudiant alternant en cinquième année d'école d'ingénieur à CY Tech"
+                canonical="https://kilianpichard.com"
+                twitter={{
+                    creator: "@Gallix64",
+                    site: "@Gallix64",
+                    card: "summary_large_image",
+                    description: "Kilian Pichard | Étudiant alternant en cinquième année d'école d'ingénieur à CY Tech",
+                    image: "resolvedOGImage"
+                }}
+                openGraph={{
+                    basic: {
+                        url: "https://kilianpichard.com",
+                        type: "website",
+                        title: "Kilian Pichard",
+                        image: "resolvedOGImage",
+                        description: "Kilian Pichard | Étudiant alternant en cinquième année d'école d'ingénieur à CY Tech",
+                    },
+                    image: {
+                        alt: "Logo Kilian Pichard",
+                        //width: 1280,
+                        //height: 675,
+                    },
+                }}
+        />
+
+    </head>
+    <body class="">
+        <slot />
+    </body>
+</html>
