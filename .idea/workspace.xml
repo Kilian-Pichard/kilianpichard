@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Avancement refabrication portfolio avec Astro (section About OK + debut section Portfolio)">
-      <change afterPath="$PROJECT_DIR$/.dev.vars" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/api/_middleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/api/contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sections/Contact.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scripts/contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Avancement refabrication portfolio avec Astro (section Portfolio OK + debut section contact )">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Tabs.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tabs.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Layout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Layout.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +70,7 @@
       <workItem from="1679665825238" duration="34931000" />
       <workItem from="1679926791116" duration="34000" />
       <workItem from="1679926829432" duration="10772000" />
-      <workItem from="1679995297860" duration="11040000" />
+      <workItem from="1679995297860" duration="11496000" />
     </task>
     <task id="LOCAL-00001" summary="Avancement refabrication portfolio avec Astro (index + section Home OK)">
       <created>1679836371769</created>
@@ -101,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679936143802</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Avancement refabrication portfolio avec Astro (section Portfolio OK + debut section contact )">
+      <created>1680078453681</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680078453681</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +102,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Avancement refabrication portfolio avec Astro (index + section Home OK)" />
     <MESSAGE value="Avancement refabrication portfolio avec Astro (section About OK + debut section Portfolio)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Avancement refabrication portfolio avec Astro (section About OK + debut section Portfolio)" />
+    <MESSAGE value="Avancement refabrication portfolio avec Astro (section Portfolio OK + debut section contact )" />
+    <option name="LAST_COMMIT_MESSAGE" value="Avancement refabrication portfolio avec Astro (section Portfolio OK + debut section contact )" />
   </component>
 </project>
