@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Ajout lien blog navbar">
+    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Mise à jour section Portfolio">
+      <change afterPath="$PROJECT_DIR$/src/styles/Tabs.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tabs.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tabs.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sections/About.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/About.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sections/Portfolio.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/Portfolio.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/menu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/portfolio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/portfolio.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <workItem from="1679665825238" duration="34931000" />
       <workItem from="1679926791116" duration="34000" />
       <workItem from="1679926829432" duration="10772000" />
-      <workItem from="1679995297860" duration="20884000" />
+      <workItem from="1679995297860" duration="24615000" />
     </task>
     <task id="LOCAL-00001" summary="Avancement refabrication portfolio avec Astro (index + section Home OK)">
       <created>1679836371769</created>
@@ -132,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680083159817</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Mise à jour section Portfolio">
+      <created>1680098287904</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680098287906</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +153,7 @@
     <MESSAGE value="Debut ajout 404 error page" />
     <MESSAGE value="Ajout page erreur 404 + pages traduites" />
     <MESSAGE value="Ajout lien blog navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout lien blog navbar" />
+    <MESSAGE value="Mise à jour section Portfolio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mise à jour section Portfolio" />
   </component>
 </project>

@@ -18,19 +18,19 @@ document.getElementById("menu-toggle").addEventListener("click", () => {
 
 window.onscroll = (e) => {
     if (window.scrollY > 200) {
-        if (clicktotop.classList.contains("invisible") && clicktotop.classList.contains("opacity-0")) {
-            clicktotop.classList.replace("invisible", "visible")
-            clicktotop.classList.replace("opacity-0", "opacity-100")
+        if (clicktotop.classList.contains("clicktotop-hidden")) {
+            clicktotop.classList.remove("clicktotop-hidden")
         }
     } else {
-        if (clicktotop.classList.contains("visible") && clicktotop.classList.contains("opacity-100")) {
-            clicktotop.classList.replace("visible", "invisible")
-            clicktotop.classList.replace("opacity-100", "opacity-0")
+        if (!clicktotop.classList.contains("clicktotop-hidden")) {
+            clicktotop.classList.add("clicktotop-hidden")
         }
     }
 }
 clicktotop.addEventListener("click", () => {
-    window.scrollTo(0, 0)
+    if (!clicktotop.classList.contains("clicktotop-hidden")) {
+        window.scrollTo(0, 0)
+    }
 })
 
 //function resize() {
