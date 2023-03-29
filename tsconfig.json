@@ -35,7 +35,9 @@
       ],
       "@utils/*": [
         "utils/*"
-      ],
-    }
+      ]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
   }
 }

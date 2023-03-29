@@ -3,6 +3,7 @@ import Navbar from "@components/Navbar.astro";
 import Footer from "@components/Footer.astro";
 import Home from "@components/sections/Home.astro";
 import About from "@components/sections/About.astro";
+import Contact from "@components/sections/Contact.astro";
 import Portfolio from "@components/sections/Portfolio.astro";
 import i18next, { t, changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
@@ -17,11 +18,7 @@ changeLanguage("fr");
 			<Home />
 			<About />
 			<Portfolio />
-			<!--
-
-			<Portfolio />
 			<Contact />
-			-->
 			<Footer />
 		</div>
 		<button id="clicktotop" class="invisible opacity-0">

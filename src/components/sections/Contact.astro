@@ -1,0 +1,129 @@
+---
+import '@styles/contact.scss';
+import { t } from "i18next";
+---
+
+<section id="contact">
+    <div class='contact-container'>
+        <div class="section-title">
+            <h2>{t("contact")}</h2>
+        </div>
+        <div class='contact-content'>
+            <div class='contact-left'>
+                <div class='contact-infos'>
+                    <ul class='contact-details'>
+                        <li>
+                            <span class='contact-details-title'>{t("phone")}</span>
+                            <a href='tel:0788196631' class='contact-details-text'>{t("phone_text")}</a>
+                        </li>
+                        <li>
+                            <span class='contact-details-title'>{t("email")}</span>
+                            <a href='mailto:contact@kilianpichard.fr' class='contact-details-text'>{t("email_text")}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class='contact-form'>
+                    <form onsubmit="sendEmail(event)">
+                        <div class='form_row'>
+                            <input type="text" name="name" placeholder={`${t("form_name")}`} class='form_item' required />
+                        </div>
+                        <div class='form_row'>
+                            <input type="email" name="email" placeholder={`${t("form_email")}`} class='form_item' required />
+                        </div>
+                        <div class='form_row'>
+                            <input type="phone" name="phone" placeholder={`${t("form_phone")}`} class='form_item' required/>
+                        </div>
+                        <div class='form_row'>
+                            <input type="text" name="company" placeholder={t("form_company")} class='form_item' />
+                        </div>
+                        <div class='form_row'>
+                            <textarea name="message" placeholder={t("form_message")} class='form_item' />
+                        </div>
+                        <div class='form_row'>
+                            <input type="submit" class='submit-button'/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class='contact-right'>
+                <div id="map" class="map-container"></div>
+            </div>
+        </div>
+    </div>
+    <div class="white_svg">
+        <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
+            <polygon points="0,300 655.167,210.5 1432.5,300 1920,198.5 1920,300 ">
+            </polygon>
+        </svg>
+    </div>
+</section>
+<script>
+    import '../../scripts/contact.js';
+</script>
+<style>
+    .form_row {
+        width: 100%;
+    }
+
+    .form_item {
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+        border: 2px solid rgba(0,0,0,.1);
+        transition: border .5s ease;
+        height: 50px;
+        line-height: 46px;
+        margin-bottom: 30px;
+        outline: none;
+        color: #fff;
+        font-size: 15px;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .form_item:focus {
+        border: 1px solid rgba(255, 255, 255, 0.6);
+    }
+
+    .form_row textarea {
+        height: 100px;
+        min-height: 100px;
+        max-height: 400px;
+        overflow: auto;
+        min-width: 100%;
+        max-width: 100%;
+        line-height: 20px;
+        padding: 10px 20px;
+    }
+
+    .submit-button {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 16px 40px;
+        border-radius: 500px;
+        display: inline-block;
+        font-weight: 500;
+        background-color: rgba(255,255,255,0.1);
+        border: none;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+    }
+
+    .submit-button:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: rgba(0,0,0,0.9);
+    }
+
+    .confirmation_message {
+        margin: 10px 0;
+    }
+
+    @media screen and (max-width: 960px) {
+        .form_row textarea {
+            height: 200px;
+            max-height: 400px;
+        }
+    }
+</style>

@@ -32,12 +32,17 @@ Array.from(portfolio_cards).forEach((card) => {
 })
 
 Array.from(portfolio_popups).forEach((popup) => {
-    console.log(popup)
-    const id = popup.id
+    const card = document.querySelector(`.portfolio-card[data-portfolio-popup="${popup.id}"]`)
     const close_popup_button = popup.children[0].children[0]
     close_popup_button.addEventListener('click', () => {
         popup.classList.remove("open")
         document.body.classList.remove("fullpage-active")
+    })
+    document.addEventListener('click', event => {
+        if(popup.classList.contains("open") && !popup.children[0].contains(event.target) && !card.contains(event.target)) {
+            popup.classList.remove("open")
+            document.body.classList.remove("fullpage-active")
+        }
     })
 })
 
