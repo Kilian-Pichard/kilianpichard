@@ -41,7 +41,7 @@
   line-height: 30px;
 }
 
-.home-socials {
+.home-socials-list {
   list-style: none;
   display: flex;
 }
@@ -53,13 +53,13 @@
   margin-right: 0;
 }
 
-.home-social-links {
+.footer-social-link {
   color: #fff;
   text-decoration: none;
   display: flex;
 }
 
-.home-social-links:hover {
+.footer-social-link:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -153,7 +153,7 @@
     font-size: 45px;
   }
 
-  .home-socials {
+  .home-socials-list {
     justify-content: center;
   }
 

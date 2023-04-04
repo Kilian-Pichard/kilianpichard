@@ -4,14 +4,14 @@ import { t } from "i18next";
 
 const socials = [
     {
-        name: "Github",
-        link: "https://github.com/Kilian-Pichard",
-        icon: "github"
-    },
-    {
         name: "LinkedIn",
         link: "https://www.linkedin.com/in/kilian-pichard/",
         icon: "linkedin"
+    },
+    {
+        name: "Github",
+        link: "https://github.com/Kilian-Pichard",
+        icon: "github"
     },
     {
         name: "Root Me",
@@ -33,20 +33,6 @@ const socials = [
         </div>
         <div class='contact-content'>
             <div class='contact-left'>
-                <!--
-                <div class='contact-infos'>
-                    <ul class='contact-details'>
-                        <li>
-                            <span class='contact-details-title'>{t("phone")}</span>
-                            <a href='tel:0788196631' class='contact-details-text'>{t("phone_text")}</a>
-                        </li>
-                        <li>
-                            <span class='contact-details-title'>{t("email")}</span>
-                            <a href='mailto:contact@kilianpichard.fr' class='contact-details-text'>{t("email_text")}</a>
-                        </li>
-                    </ul>
-                </div>
-                -->
                 <div class="contact-socials-links">
                     {
                         socials.map((social) => (
