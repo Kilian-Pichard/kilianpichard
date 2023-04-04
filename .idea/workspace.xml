@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Mise à jour section contact + about + ajout score Root Me">
+    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Ajout hover tab about">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sections/About.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/About.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/navbar.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
       <workItem from="1679995297860" duration="24718000" />
       <workItem from="1680334123322" duration="194000" />
       <workItem from="1680628178623" duration="222000" />
-      <workItem from="1680628742544" duration="11551000" />
+      <workItem from="1680628742544" duration="15390000" />
     </task>
     <task id="LOCAL-00001" summary="Avancement refabrication portfolio avec Astro (index + section Home OK)">
       <created>1679836371769</created>
@@ -154,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680644366312</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Ajout hover tab about">
+      <created>1680645353297</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680645353297</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +179,7 @@
     <MESSAGE value="Mise à jour section Portfolio" />
     <MESSAGE value="Mise à jour bouton clicktotop" />
     <MESSAGE value="Mise à jour section contact + about + ajout score Root Me" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise à jour section contact + about + ajout score Root Me" />
+    <MESSAGE value="Ajout hover tab about" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout hover tab about" />
   </component>
 </project>

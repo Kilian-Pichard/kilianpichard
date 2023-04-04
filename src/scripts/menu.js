@@ -1,5 +1,5 @@
 const nav_links = document.querySelector(".nav-links")
-//const mobile_menu = document.getElementById("mobile-menu")
+const mobile_menu_dropdown = document.getElementById("mobile-menu-dropdown")
 const body = document.body
 const menu_toggle = document.getElementById("menu-toggle")
 const clicktotop = document.getElementById("clicktotop")
@@ -9,12 +9,12 @@ const accordionCategoriesButton = document.getElementById("accordion_categories_
 const accordionCategories = document.getElementById("accordion_categories")
 
 document.getElementById("menu-toggle").addEventListener("click", () => {
-    //mobile_menu.classList.toggle("mobile-menu-active")
+    mobile_menu_dropdown.classList.toggle("active")
     body.classList.toggle("fullpage-active")
     menu_toggle.classList.toggle("open")
 });
 
-//window.onresize = resize
+window.onresize = resize
 
 window.onscroll = (e) => {
     if (window.scrollY > 200) {
@@ -33,11 +33,12 @@ clicktotop.addEventListener("click", () => {
     }
 })
 
-//function resize() {
-//    if(window.innerWidth >= 768 && mobile_menu.classList.contains("mobile-menu-active")) {
-//        mobile_menu.classList.remove("mobile-menu-active")
-//    }
-//}
+function resize() {
+    if(window.innerWidth > 1024 && mobile_menu_dropdown.classList.contains("active")) {
+        mobile_menu_dropdown.classList.remove("active")
+        menu_toggle.classList.remove("open")
+    }
+}
 
 const sun = document.querySelectorAll(".sun")
 const moon = document.querySelectorAll(".moon")

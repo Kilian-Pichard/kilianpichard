@@ -1,5 +1,5 @@
 ---
-//import '@styles/navbar.scss';
+import '@styles/navbar.scss';
 import i18next, { t } from "i18next";
 
 const navLinks = [
@@ -26,43 +26,44 @@ const navLinks = [
 ];
 ---
 
-<nav class="fixed top-0 left-0 flex items-center justify-between px-16 py-1 h-24 w-full z-[900] bg-black xl:h-screen xl:w-96 xl:flex-col xl:justify-center xl:space-y-12">
-    <div>
-        <img
-            class="w-20 h-20 xl:w-32 xl:h-32"
-            src="/assets/Logo_KP_White.png"
-            alt="Logo KP"
-        />
+<nav class="navbar"> <!--  xl:space-y-12 -->
+    <div class="navbar-container">
+        <a class="navbar-logo" href="/#home">
+            <img
+                src="/assets/Logo_KP_White.png"
+                alt="Logo KP"
+            />
+        </a>
+        <div class="nav-content">
+            <ul class="nav-menu">
+                {navLinks
+                    .map((navLink) => (
+                        <li class="nav-item">
+                            <a href={navLink.href} class="nav-links">{t(navLink.name)}</a>
+                        </li>
+                    ))
+                }
+            </ul>
+            <button id="menu-toggle" class="menu-icon">
+                <span id="mobile-toggle">
+                    <span class="fill-neutral-50"></span>
+                    <span class="fill-neutral-50"></span>
+                    <span class="fill-neutral-50"></span>
+                    <span class="fill-neutral-50"></span>
+                </span>
+            </button>
+        </div>
     </div>
-    <div class="flex justify-end w-full xl:justify-center">
-        <ul class="justify-end hidden lg:flex lg:flex-row xl:flex-col xl:justify-center xl:space-y-8">
-            {navLinks
-                .map((navLink) => (
-                    <li class="ml-16 text-xl xl:text-center">
-                        <a href={navLink.href} class="text-neutral-50 hover:text-neutral-300">{t(navLink.name)}</a>
-                    </li>
-                ))
-            }
-        </ul>
-        <button id="menu-toggle" class="p-2 rounded-full lg:hidden">
-            <span id="mobile-toggle">
-                <span class="fill-neutral-50"></span>
-                <span class="fill-neutral-50"></span>
-                <span class="fill-neutral-50"></span>
-                <span class="fill-neutral-50"></span>
-            </span>
-        </button>
-    </div>
-    <ul class="fixed flex flex-col w-full h-fit top-[-500px] left-0 right-0 opacity-100 transition-[all_0.5s_ease] z-[50]" id="nav-menu-dropdown">
-        {navLinks
-            .map((navLink) => (
-                    <li class="w-44 text-right text-xl">
-                        <a href={navLink.href} class="text-neutral-100 hover:text-neutral-300">{t(navLink.name)}</a>
-                    </li>
-            ))
-        }
-    </ul>
 </nav>
+<ul class="mobile-menu" id="mobile-menu-dropdown">
+    {navLinks
+        .map((navLink) => (
+            <li class="nav-item">
+                <a href={navLink.href} class="nav-links">{t(navLink.name)}</a>
+            </li>
+        ))
+    }
+</ul>
 
 <script>
     import "../scripts/menu.js";
