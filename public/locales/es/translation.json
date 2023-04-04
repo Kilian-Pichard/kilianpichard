@@ -18,10 +18,11 @@
   "phone": "Teléfono:",
   "phone_text": "+33 7 88 19 66 31",
   "study": "Estudio:",
-  "study_text": "CY Tech - Pau/Cergy (Francia)",
+  "study_text": "CY Tech (Francia)",
   "experience": "Experiencia",
   "education": "Educación",
   "skills": "Habilidades",
+  "rootme_score": "Puntos Root Me:",
 
   "experience_cdsf_apprenticeship_place": "Continental Digital Services France - Toulouse (Francia)",
   "experience_cdsf_apprenticeship_date_start": "Sept 2022",
