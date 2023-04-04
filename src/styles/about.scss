@@ -110,6 +110,10 @@
   transition: all .45s cubic-bezier(0,0,.2,1);
 }
 
+.resume-categories li.tabs__tab:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .resume-categories li.tabs__tab.tabs__tab--selected {
   background-color: #fff;
   pointer-events: none;
