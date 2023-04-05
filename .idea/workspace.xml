@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Correction bug alignement">
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/site.webmanifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Modification pour SEO">
       <change beforePath="$PROJECT_DIR$/src/layouts/Layout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Layout.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +74,7 @@
       <workItem from="1680628178623" duration="222000" />
       <workItem from="1680628742544" duration="20949000" />
       <workItem from="1680708503079" duration="3236000" />
-      <workItem from="1680711766577" duration="176000" />
+      <workItem from="1680711766577" duration="804000" />
     </task>
     <task id="LOCAL-00001" summary="Avancement refabrication portfolio avec Astro (index + section Home OK)">
       <created>1679836371769</created>
@@ -212,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680711634812</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Modification pour SEO">
+      <created>1680712008414</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1680712008414</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +242,7 @@
     <MESSAGE value="Modification click lien menu mobile" />
     <MESSAGE value="Alignement du texte à gauche" />
     <MESSAGE value="Correction bug alignement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction bug alignement" />
+    <MESSAGE value="Modification pour SEO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification pour SEO" />
   </component>
 </project>
