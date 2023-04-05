@@ -4,6 +4,12 @@ div.div-error {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  padding: 2rem 4rem;
+}
+
+div.div-error .logo {
+  width: 8rem;
+  margin-bottom: 2rem;
 }
 
 h1 {
@@ -25,4 +31,20 @@ a {
 }
 a:hover {
   background-color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 45px;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 35px;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
 }

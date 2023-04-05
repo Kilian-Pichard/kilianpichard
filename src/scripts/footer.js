@@ -4,6 +4,9 @@ const close_privacy_popup_button = document.querySelector("#footer-privacy-popup
 const legal_button = document.getElementById("footer-legal")
 const legal_popup = document.getElementById("footer-legal-popup")
 const close_legal_popup_button = document.querySelector("#footer-legal-popup .close_icon")
+const flag_icons_fr = document.getElementById("flag-icons-fr")
+const flag_icons_en = document.getElementById("flag-icons-en")
+const flag_icons_es = document.getElementById("flag-icons-es")
 
 privacy_button.addEventListener('click', () => {
     privacy_popup.classList.add("open")
@@ -36,3 +39,22 @@ document.addEventListener('click', event => {
         document.body.classList.remove("fullpage-active")
     }
 })
+
+window.onload = () => {
+    const pathname = window.location.pathname
+    if(pathname === "/") {
+        flag_icons_fr.classList.add("active")
+        flag_icons_en.classList.remove("active")
+        flag_icons_es.classList.remove("active")
+    }
+    else if(pathname === "/en") {
+        flag_icons_fr.classList.remove("active")
+        flag_icons_en.classList.add("active")
+        flag_icons_es.classList.remove("active")
+    }
+    else if(pathname === "/es") {
+        flag_icons_fr.classList.remove("active")
+        flag_icons_en.classList.remove("active")
+        flag_icons_es.classList.add("active")
+    }
+}

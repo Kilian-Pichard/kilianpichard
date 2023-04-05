@@ -82,3 +82,15 @@
 .section_text ul {
   list-style: none;
 }
+
+@media screen and (max-width: 640px) {
+  .privacy_popup,
+  .legal_popup,
+  .portfolio_popup {
+    width: 95vw;
+  }
+
+  .popup_content {
+    padding: 60px 30px 50px 30px;
+  }
+}

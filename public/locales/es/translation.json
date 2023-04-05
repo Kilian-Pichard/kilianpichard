@@ -22,7 +22,8 @@
   "experience": "Experiencia",
   "education": "Educación",
   "skills": "Habilidades",
-  "rootme_score": "Puntos Root Me:",
+  "rootme_score": "Root Me:",
+  "rootme_points": " puntos",
 
   "experience_cdsf_apprenticeship_place": "Continental Digital Services France - Toulouse (Francia)",
   "experience_cdsf_apprenticeship_date_start": "Sept 2022",
