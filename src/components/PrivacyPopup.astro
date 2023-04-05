@@ -1,0 +1,68 @@
+---
+import { t } from "i18next";
+import '@styles/popup.scss';
+---
+
+<div class="popup_container" id="footer-privacy-popup">
+    <div class="privacy_popup">
+        <span class="close_icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+            </svg>
+        </span>
+        <div class="popup_content">
+            <div class="popup_title">
+                <h2>{t("privacy_policy")}</h2>
+            </div>
+            <div class="popup_section">
+                <div class="section_title">
+                    {t("personal_data")}
+                </div>
+                <div class="section_text">
+                    <ul>
+                        <li>
+                            {t("personal_data_text_1")}
+                        </li>
+                        <li>
+                            {t("personal_data_text_2")}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="popup_section">
+                <div class="section_title">
+                    {t("contact_form")}
+                </div>
+                <div class="section_text">
+                    <ul>
+                        <li>
+                            {t("contact_form_text_1")}
+                        </li>
+                        <li>
+                            {t("contact_form_text_2")}
+                        </li>
+                        <li>
+                            {t("contact_form_text_3")}
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="popup_section">
+                <div class="section_title">
+                    {t("french_data_protection")}
+                </div>
+                <div class="section_text">
+                    <ul>
+                        <li>
+                            {t("french_data_protection_text_1")}
+                        </li>
+                        <li>
+                            {t("french_data_protection_text_2")}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

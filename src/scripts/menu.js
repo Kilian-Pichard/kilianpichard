@@ -1,3 +1,4 @@
+const navbar = document.getElementById("navbar")
 const nav_links = document.querySelector(".nav-links")
 const mobile_menu_dropdown = document.getElementById("mobile-menu-dropdown")
 const body = document.body
@@ -10,7 +11,6 @@ const accordionCategories = document.getElementById("accordion_categories")
 
 document.getElementById("menu-toggle").addEventListener("click", () => {
     mobile_menu_dropdown.classList.toggle("active")
-    body.classList.toggle("fullpage-active")
     menu_toggle.classList.toggle("open")
 });
 
@@ -39,6 +39,13 @@ function resize() {
         menu_toggle.classList.remove("open")
     }
 }
+
+document.addEventListener('click', event => {
+    if(mobile_menu_dropdown.classList.contains("active") && !mobile_menu_dropdown.contains(event.target) && !menu_toggle.contains(event.target) && !navbar.contains(event.target)) {
+        mobile_menu_dropdown.classList.remove("active")
+        menu_toggle.classList.remove("open")
+    }
+})
 
 const sun = document.querySelectorAll(".sun")
 const moon = document.querySelectorAll(".moon")

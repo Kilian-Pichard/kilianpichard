@@ -79,6 +79,19 @@
   text-decoration: underline;
 }
 
+.nav-links.external-link {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-links.external-link .external-link-icon {
+  position: relative;
+  top: -5px;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-left: 0.25rem;
+}
+
 .mobile-menu {
   display: none;
 }
@@ -214,10 +227,12 @@
   }
 
   .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 0;
     width: 100%;
-    display: grid;
     border-radius: 0;
     height: 50px;
     margin: 0;
