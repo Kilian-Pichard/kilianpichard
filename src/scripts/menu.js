@@ -47,6 +47,14 @@ document.addEventListener('click', event => {
     }
 })
 
+Array.from(mobile_menu_dropdown.children).forEach((link) => {
+    link.addEventListener("click", () => {
+        mobile_menu_dropdown.classList.remove("active")
+        menu_toggle.classList.remove("open")
+    })
+})
+
+
 const sun = document.querySelectorAll(".sun")
 const moon = document.querySelectorAll(".moon")
 const theme = (() => {
