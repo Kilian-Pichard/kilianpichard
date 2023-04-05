@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Modification click lien menu mobile">
+    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Alignement du texte à gauche">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PortfolioPopup.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PortfolioPopup.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/about_item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/about_item.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/popup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/home.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +74,7 @@
       <workItem from="1680334123322" duration="194000" />
       <workItem from="1680628178623" duration="222000" />
       <workItem from="1680628742544" duration="20949000" />
-      <workItem from="1680708503079" duration="2723000" />
+      <workItem from="1680708503079" duration="3098000" />
     </task>
     <task id="LOCAL-00001" summary="Avancement refabrication portfolio avec Astro (index + section Home OK)">
       <created>1679836371769</created>
@@ -198,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680711079174</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Alignement du texte à gauche">
+      <created>1680711253275</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680711253275</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +226,7 @@
     <MESSAGE value="Mise à jour du footer + Modification de la navbar" />
     <MESSAGE value="Correction bugs (page error, footer, local icons, Root Me)" />
     <MESSAGE value="Modification click lien menu mobile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification click lien menu mobile" />
+    <MESSAGE value="Alignement du texte à gauche" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alignement du texte à gauche" />
   </component>
 </project>
