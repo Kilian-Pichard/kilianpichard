@@ -42,7 +42,7 @@ This project is licensed under the [MIT License](LICENSE). Feel free to explore,
 ## Contact
 If you have any questions, feedback, or inquiries, please feel free to reach out to me:
 - Website: [kilianpichard.com](https://kilianpichard.com/)
-- Email: [mailto:contact@kilianpichard.com](contact@kilianpichard.com)
-- LinkedIn: [linkedin.com/in/your-profile](https://www.linkedin.com/in/kilian-pichard/)
+- Email: [contact@kilianpichard.com](mailto:contact@kilianpichard.com)
+- LinkedIn: [linkedin.com/in/kilian-pichard/](https://www.linkedin.com/in/kilian-pichard/)
 
 Thank you for visiting my portfolio website! I hope you find it informative and engaging.
