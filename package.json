@@ -1,13 +1,26 @@
 {
   "name": "kilianpichard",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "Kilian Pichard's website, an online portfolio that highlights my work, skills, and experiences.",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
+  },
+  "keywords": [
+    "portfolio",
+    "astro",
+    "skills",
+    "experiences",
+    "work"
+  ],
+  "author": "Kilian Pichard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kilian-Pichard/kilianpichard/issues"
   },
   "dependencies": {
     "@astrojs/tailwind": "^3.1.1",
