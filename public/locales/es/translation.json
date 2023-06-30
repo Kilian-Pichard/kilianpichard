@@ -33,6 +33,15 @@
   "experience_cdsf_apprenticeship_description2": "Práctica de la buena vulnerabilidad, los cumplimientos y la gestión de la política dentro del CDSF.",
   "experience_cdsf_apprenticeship_description3": "Participación en el análisis de riesgos, la gestión de la vulnerabilidad, las actividades del SOC y las actividades del SGSI de la FCD.",
 
+  "experience_cy_project_virtual_core_place": "CY Tech - Pau (Francia)",
+  "experience_cy_project_virtual_core_date_start": "Marzo 2023",
+  "experience_cy_project_virtual_core_date_end": "Mayo 2023",
+  "experience_cy_project_virtual_core_title": "Proyecto universitario - Implantación de un núcleo virtual",
+  "experience_cy_project_virtual_core_description1": "Implementación de un núcleo virtual de 64 bits que contiene hasta 16 registros de 64 bits",
+  "experience_cy_project_virtual_core_description2": "Desarrollo de un compilador para compilar un fichero ensamblador en un fichero binario",
+  "experience_cy_project_virtual_core_description3": "Obtención de instrucciones del fichero binario, decodificación y ejecución de dichas instrucciones",
+  "experience_cy_project_virtual_core_description4": "Escribir el núcleo virtual en C y el compilador de ensamblador en Python",
+
   "experience_uja_internship_place": "Universidad de Jaén - Jaén (España)",
   "experience_uja_internship_date_start": "Abr 2022",
   "experience_uja_internship_date_end": "Jul 2022",

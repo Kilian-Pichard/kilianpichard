@@ -10,6 +10,7 @@ import logoSigma from "@assets/logo_sigma_consulting.png";
 import logoLWF from "@assets/logo_la_web_factory.png";
 import logoIUT from "@assets/logo_iut_bayonne.png";
 import logoVieljeux from "@assets/logo_vieljeux.png";
+import logoGithub from "@assets/logo_github.png";
 import AboutItem from "@components/AboutItem.astro";
 
 const ageCalculator = () => {
@@ -21,10 +22,8 @@ const ageCalculator = () => {
     const age_dt = new Date(month_diff);
     //extract year from date
     const year = age_dt.getUTCFullYear();
-    //now calculate the age of the user
-    const age = Math.abs(year - 1970);
-    //return the calculated age
-    return age
+    //return the calculated age of the user
+    return Math.abs(year - 1970);
 };
 
 const data = [
@@ -98,7 +97,7 @@ const data = [
                     </li>
                     <li>
                         <span class='infos-title'>{t("rootme_score")}</span>
-                        <span class='infos-text' id="rootme">1275 {t("rootme_points")}</span>
+                        <span class='infos-text' id="rootme">1405 {t("rootme_points")}</span>
                     </li>
                 </ul>
             </div>
@@ -128,6 +127,24 @@ const data = [
                                 `}
                                 logo={logoContinental}
                                 href="https://www.continental.com/fr-fr/"
+                            />
+                        </li>
+                        <li class='list-item'>
+                            <AboutItem
+                                place={t("experience_cy_project_virtual_core_place")}
+                                dateStart={t("experience_cy_project_virtual_core_date_start")}
+                                dateEnd={t("experience_cy_project_virtual_core_date_end")}
+                                title={t("experience_cy_project_virtual_core_title")}
+                                description={`
+                                    <ul>
+                                        <li>${t("experience_cy_project_virtual_core_description1")}</li>
+                                        <li>${t("experience_cy_project_virtual_core_description2")}</li>
+                                        <li>${t("experience_cy_project_virtual_core_description3")}</li>
+                                        <li>${t("experience_cy_project_virtual_core_description4")}</li>
+                                    </ul>
+                                `}
+                                logo={logoGithub}
+                                href="https://github.com/Kilian-Pichard/virtual_core/"
                             />
                         </li>
                         <li class='list-item'>

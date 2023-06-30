@@ -33,6 +33,15 @@
   "experience_cdsf_apprenticeship_description2": "Practice good vulnerability, compliances and policies management within CDSF.",
   "experience_cdsf_apprenticeship_description3": "Participation in risk analysis, vulnerability management, SOC activities and CDSF ISMS activities.",
 
+  "experience_cy_project_virtual_core_place": "CY Tech - Pau (France)",
+  "experience_cy_project_virtual_core_date_start": "March 2023",
+  "experience_cy_project_virtual_core_date_end": "Mai 2023",
+  "experience_cy_project_virtual_core_title": "University project - Implementation of a virtual core",
+  "experience_cy_project_virtual_core_description1": "Implementation of a 64-bit virtual core containing up to 16 64-bit registers.",
+  "experience_cy_project_virtual_core_description2": "Realization of a compiler to compile an assembler file into a binary file.",
+  "experience_cy_project_virtual_core_description3": "Fetch instructions from the binary file, decode and execute these instructions.",
+  "experience_cy_project_virtual_core_description4": "Writing the virtual core in C and the compiler of assembler in Python",
+
   "experience_uja_internship_place": "University of Jaén - Jaén (Spain)",
   "experience_uja_internship_date_start": "Apr 2022",
   "experience_uja_internship_date_end": "Jul 2022",
