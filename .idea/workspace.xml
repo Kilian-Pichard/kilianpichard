@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Ajout projet coeur virtuel">
+    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Mise à jour lien externe navbar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/es/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/es/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/fr/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/fr/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sections/About.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/About.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +79,7 @@
       <workItem from="1680787479470" duration="124000" />
       <workItem from="1686204863792" duration="86000" />
       <workItem from="1686205013029" duration="79000" />
-      <workItem from="1688114700683" duration="5847000" />
+      <workItem from="1688114700683" duration="6555000" />
     </task>
     <task id="LOCAL-00001" summary="Avancement refabrication portfolio avec Astro (index + section Home OK)">
       <created>1679836371769</created>
@@ -239,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688117216313</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Mise à jour des compétences">
+      <option name="closed" value="true" />
+      <created>1688130079479</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1688130079479</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +274,8 @@
     <MESSAGE value="Ajout balise meta google pour SEO" />
     <MESSAGE value="Mise à jour points Root-Me" />
     <MESSAGE value="Ajout projet coeur virtuel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout projet coeur virtuel" />
+    <MESSAGE value="Mise à jour des compétences" />
+    <MESSAGE value="Mise à jour lien externe navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mise à jour lien externe navbar" />
   </component>
 </project>
