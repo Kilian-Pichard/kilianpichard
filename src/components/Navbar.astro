@@ -72,7 +72,7 @@ const navLinks = [
     {navLinks
         .map((navLink) => (
             <li class="nav-item">
-                <a href={navLink.href} class={`nav-links ${navLink.isExternal ? "external-link" : ""}`}>
+                <a href={navLink.href} class={`nav-links ${navLink.isExternal ? "external-link" : ""}`} target={navLink.isExternal ? "_blank" : "_self" } rel={navLink.isExternal ? "noreferrer" : "" }>
                     <span>{t(navLink.name)}</span>
                     {navLink.isExternal &&
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="external-link-icon" viewBox="0 0 16 16">
