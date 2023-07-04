@@ -92,7 +92,7 @@
   "education_cy_title": "Diplôme d'ingénieur en informatique",
   "education_cy_description_1": "Algorithmes, structures de données, Design Patterns",
   "education_cy_description_2": "Réseau : architecture, programmation (processus, IPC, sockets, TCP)",
-  "education_cy_description_3": "Sécurité : gouvernance de sécurité des SI",
+  "education_cy_description_3": "Cybersécurité : Cryptographie (symétrique, asymétrique), Sécurité web (OWASP, XSS, CSRF, SQLi), Pentests, Forensics, Reverse engineering, Analyse de malware, Gouvernance et famille ISO/IEC 2700x, Gestion de crise & Réponse à Incident, Sécurité des réseaux, Sécurité du matérielle au logicielle, Durcissement Linux, Sécurité Shellcode, Sécurité des systèmes industriels (SCADA)",
   "education_cy_description_4": "Programmation web : HTML5, CSS3, JS, PHP, Spring, Hibernate, SQL/MySQL",
   "education_cy_description_5": "Système d’exploitation : Linux/Windows, commandes Unix",
   "education_cy_description_6": "Intelligence artificielle : Machine learning (réseaux de neurones), Deep Learning, Apprentissage par reinforcement, NLP (Python, Keras, TensorFlow)",

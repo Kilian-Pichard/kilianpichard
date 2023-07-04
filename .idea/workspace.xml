@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Modification adresse email">
-      <change afterPath="$PROJECT_DIR$/public/assets/pp_2.jpeg" afterDir="false" />
+    <list default="true" id="4946ac0a-fdef-4a83-b96a-95ea8ab1a150" name="Changes" comment="Changement photo de profil + correction bug lien externe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/pp.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/pp.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/en/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/en/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/es/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/es/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/locales/fr/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/locales/fr/translation.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
       <workItem from="1686204863792" duration="86000" />
       <workItem from="1686205013029" duration="79000" />
       <workItem from="1688114700683" duration="9322000" />
-      <workItem from="1688287109353" duration="164000" />
+      <workItem from="1688287109353" duration="1673000" />
     </task>
     <task id="LOCAL-00001" summary="Avancement refabrication portfolio avec Astro (index + section Home OK)">
       <created>1679836371769</created>
@@ -271,14 +271,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688146153937</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Changement photo de profil + correction bug lien externe">
+      <option name="closed" value="true" />
+      <created>1688287316971</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1688287316971</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Avancement refabrication portfolio avec Astro (section Portfolio OK + debut section contact )" />
     <MESSAGE value="Resolution bug" />
     <MESSAGE value="Ajout des images" />
     <MESSAGE value="Debut ajout 404 error page" />
@@ -303,6 +310,7 @@
     <MESSAGE value="Mise à jour lien externe navbar" />
     <MESSAGE value="Changement photo principale" />
     <MESSAGE value="Modification adresse email" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification adresse email" />
+    <MESSAGE value="Changement photo de profil + correction bug lien externe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changement photo de profil + correction bug lien externe" />
   </component>
 </project>
